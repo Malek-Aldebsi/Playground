@@ -1,0 +1,64 @@
+{% load static  %}
+
+<link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<link rel="stylesheet" href="{% static 'styles/ticket.css' %}" />
+
+<div class="ticket">
+	<div class="left">
+		<div class="image">
+			<p class="admit-one">
+				<span>ADMIT ONE</span>
+				<span>ADMIT ONE</span>
+				<span>ADMIT ONE</span>
+			</p>
+			<div class="ticket-number">
+				<p>
+					#{{ ticketID }}
+				</p>
+			</div>
+		</div>
+		<div class="ticket-info">
+			<p class="date">
+				<span>TUESDAY</span>
+				<span class="june-29">JUNE 29TH</span>
+				<span>2022</span>
+			</p>
+			<div class="show-name">
+				<h1>Mada Event</h1>
+				<h2>VIP Ticket</h2>
+			</div>
+			<div class="time">
+				<p>8:00 PM <span>TO</span> 11:00 PM</p>
+				<p>DOORS <span>@</span> 7:00 PM</p>
+			</div>
+			<p class="location"><span>{{ user.username }}</span>
+				<span class="separator"><i class="far fa-smile"></i></span><span>Petra, Jordan</span>
+			</p>
+		</div>
+	</div>
+	<div class="right">
+		<p class="admit-one">
+			<span>ADMIT ONE</span>
+			<span>ADMIT ONE</span>
+			<span>ADMIT ONE</span>
+		</p>
+		<div class="right-info-container">
+			<div class="show-name">
+				<h1>Event name</h1>
+			</div>
+			<div class="time">
+				<p>8:00 PM <span>TO</span> 11:00 PM</p>
+				<p>DOORS <span>@</span> 7:00 PM</p>
+			</div>
+			<div class="barcode">
+				<img src="https://api.qr-code-generator.com/v1/create?access-token=PULYyktnkBVNumZ3qQG7BrnhHpz_6sya4gP-dLBZmIiG2Y7SUoklru5cozEnvyav&qr_code_text=http://127.0.0.1:8000/ticketState/{{ user.id }}" alt="QR code">
+			</div>
+			<p class="ticket-number">
+				#{{ ticketID }}
+			</p>
+		</div>
+	</div>
+</div>
+

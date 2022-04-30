@@ -1,0 +1,145 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Main Section -->
+  <main class="home">
+     <section class="rootSec">
+      <section class="logo-section">
+          <img src="{% static 'images\madaLogo.png' %}" alt="" />
+      </section>
+             <section class="hero-section text-center">
+      <div class="container container--narrow">
+          <div class="hero-section__box">
+              <h2>Together we <span>MADA</span></h2>
+              <h2> Biggest event in Jordan</h2>
+              <h2><b>18-8-2022</b></h2>
+          </div>
+          <div class="hero-section__search">
+              <form class="form" action="#" method="get">
+              <div class="form__field">
+                  <a href="{% url 'buyTicket' %}" class="btn btn--ticket btn--lg">Buy Ticket</a>
+              </form>
+                  <div class="madaImage">
+
+                  </div>
+              </div>
+
+          </div>
+                 </section>
+    </section>
+          <!-- Search Result: DevList -->
+    <section class="devlist">
+      <div class="container">
+        <div class="grid">
+          <div class="column card">
+            <div class="dev">
+              <a href="" class="card__body">
+                <div class="dev__profile">
+                  <img class="avatar avatar--md" src="{% static 'images/logo2.jpeg' %}" alt="image" />
+                  <div class="dev__meta">
+                    <h3>About Mada</h3>
+                    <h5>Team, Plan, Help</h5>
+                  </div>
+                </div>
+                <p class="dev__info">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ducimus inventore! Sunt,
+                  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
+                  animi, exercitationem molestias nam doloremque architecto odit.
+                  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
+                  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
+
+                </p>
+                <div class="dev__skills">
+                  <span class="tag tag--pill tag--main">
+                    <small>location</small>
+                  </span>
+                  <span class="tag tag--pill tag--main">
+                    <small>Phone</small>
+                  </span>
+                  <span class="tag tag--pill tag--main">
+                    <small>Email</small>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="column card">
+            <div class="dev">
+              <a href="" class="card__body">
+                <div class="dev__profile">
+                  <img class="avatar avatar--md" src="{% static 'images/logo2.jpeg' %}" alt="image" />
+                  <div class="dev__meta">
+                    <h3> Mada Offers</h3>
+                    <h5></h5>
+                  </div>
+                </div>
+                <p class="dev__info">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ducimus inventore! Sunt,
+                  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
+                  animi, exercitationem molestias nam doloremque architecto odit.
+                  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
+                  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
+
+                </p>
+                <div class="dev__skills">
+                  <span class="tag tag--pill tag--main">
+                    <small>Couple Offer</small>
+                  </span>
+                  <span class="tag tag--pill tag--main">
+                    <small>VIP</small>
+                  </span>
+                  <span class="tag tag--pill tag--main">
+                    <small>MADA-base</small>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="column card">
+            <div class="dev">
+              <a href="" class="card__body">
+                <div class="dev__profile">
+                  <img class="avatar avatar--md" src="{% static 'images\logo2.jpeg' %}" alt="image" />
+                  <div class="dev__meta">
+                    <h3>Event details </h3>
+                    <h5>Biggest festival </h5>
+                  </div>
+                </div>
+                <p class="dev__info">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ducimus inventore! Sunt,
+                  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
+                  animi, exercitationem molestias nam doloremque architecto odit.
+                  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
+                  veniam veritatis? Veritatis placeat, deleniti iure tempore veniam perspiciatis, soluta cupiditate
+
+                </p>
+                <div class="dev__skills">
+                  <span class="tag tag--pill tag--main">
+                    <small>Facebook</small>
+                  </span>
+                  <span class="tag tag--pill tag--main">
+                    <small>Instagram</small>
+                  </span>
+                  <span class="tag tag--pill tag--main">
+                    <small>Whatsapp</small>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+
+{% endblock content %}

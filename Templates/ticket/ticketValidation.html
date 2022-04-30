@@ -1,0 +1,17 @@
+{% load static  %}
+
+<link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+<link rel="stylesheet" href="{% static 'uikit/styles/validation.css' %}" />
+  <!-- Dev Search UI -->
+  <link rel="stylesheet" href="{% static 'styles/validation.css' %}" />
+
+{% if ticket.haveOne %}
+    <h1>{{ ticket.numberOfScans }}</h1>
+
+    <a href="{% url 'ticketChecker' user.id%}" class="button instagram"><span class="gradient"></span>Welcome</a>
+
+{% else %}
+    <h1>Don't have ticket</h1>
+{% endif %}

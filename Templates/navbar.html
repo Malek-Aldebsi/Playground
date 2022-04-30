@@ -1,0 +1,35 @@
+{% load static %}
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container container--narrow">
+      <a href="{% url 'home' %}" class="header__logo">
+        <img src="{% static 'images/logo.png' %}" alt="" />
+      </a>
+      <nav class="header__nav">
+        <input type="checkbox" id="responsive-menu" />
+        <label for="responsive-menu" class="toggle-menu">
+          <span>Menu</span>
+          <div class="toggle-menu__lines"></div>
+        </label>
+        <ul class="header__menu">
+
+            <li class="header__menuItem"><a href="{% url 'map' %}">Event location</a></li>
+            {% if request.user.profile.ticket.haveOne %}
+                <li class="header__menuItem"><a href="{% url 'ticket' %}">Ticket</a></li>
+            {% else %}
+                <li class="header__menuItem"><a href="{% url 'buyTicket' %}">Buy Ticket</a></li>
+            {% endif %}
+                <li class="header__menuItem"><a href="{% url 'home' %}">Home</a></li>
+                <li class="header__menuItem"><a href="">Help</a></li>
+
+            {% if request.user.is_authenticated %}
+          <li class="header__menuItem"><a href="{% url 'logout' %}" class="btn btn--sub">Logout</a></li>
+            {% else %}
+          <li class="header__menuItem"><a href="{% url 'login' %}" class="btn btn--sub">Login/Sign Up</a></li>
+            {% endif %}
+
+        </ul>
+      </nav>
+    </div>
+  </header>
